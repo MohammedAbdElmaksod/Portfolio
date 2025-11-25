@@ -3,203 +3,478 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Mohamed Abd-Elmaksod | Full Stack .NET Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="images/person-removebg.png" />
-    <title>Mohamed Abd-Elmaksod</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- start hero section -->
-    <div class="hero" id="hero">
-      <div class="container">
-        <div class="navbar">
-          <h2 class="logo"><span>M</span>O</h2>
-          <nav>
-            <div class="links">
-              <a href="#hero" class="active">Hero</a>
-              <a href="#about">About</a>
-              <a href="#services">Services</a>
-              <a href="#contact">Contact</a>
-            </div>
-          </nav>
-          <div class="menu">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="menu-links">
-            <a href="#hero" class="active">Hero</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-        <div class="content">
-          <div class="text">
-            <h2>
-              Hi Vistors, <br />I'm a <span>FullStack</span> .NET | Angular |
-              Blazor Developer
-            </h2>
-            <p>I can provide Make websites service and other services</p>
-            <a href="#sercives">Learn More</a>
-          </div>
-          <div class="image">
-            <img src="images/person-removebg.png" alt="person image" />
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo"><span>M</span>A</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-    </div>
-    <!-- end hero section -->
-    <!-- start about section -->
-    <div class="about" id="about">
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
       <div class="container">
-        <div class="about-info">
-          <div class="info">
-            <div class="genral">
-              <h3 class="title">Personal:</h3>
-              <h4>Name: Mohamed Abd-Elmaksod</h4>
-              <h4>Age: 23</h4>
-              <h4>Address: Minya, Banimazar</h4>
-            </div>
-            <div class="education">
-              <h3 class="title">Education:</h3>
-              <h4>Minya University</h4>
-              <h4>Computer Scince College</h4>
-              <h4>Information Systems Field</h4>
-              <p>From: 2019 To: 2023</p>
-            </div>
-            <div class="hobbies">
-              <h3 class="title">Hobbies:</h3>
-              <h4>Coding</h4>
-              <h4>Play Football</h4>
-              <h4>Watching Movies</h4>
-              <h4>Exploring</h4>
-            </div>
-          </div>
-          <div class="skills">
-            <div class="skill">
-              <h4>.NET Core:</h4>
-              <div class="progress">
-                <span data-width="90%"></span>
-              </div>
-            </div>
-            <div class="skill">
-              <h4>Angular:</h4>
-              <div class="progress">
-                <span data-width="85%"></span>
-              </div>
-            </div>
-            <div class="skill">
-              <h4>Blazor:</h4>
-              <div class="progress">
-                <span data-width="80%"></span>
-              </div>
-            </div>
-            <div class="skill">
-              <h4>Html:</h4>
-              <div class="progress">
-                <span data-width="90%"></span>
-              </div>
-            </div>
-            <div class="skill">
-              <h4>Css:</h4>
-              <div class="progress">
-                <span data-width="85%"></span>
-              </div>
-            </div>
-            <div class="skill">
-              <h4>Js:</h4>
-              <div class="progress">
-                <span data-width="80%"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="cv" href="mohamed abdelmaksod.pdf">Download CV</a>
-      </div>
-    </div>
-    <!-- end about section -->
-    <!-- start services section -->
-    <div class="services" id="services">
-      <div class="container">
-        <div class="services-box">
-          <div class="service">
-            <h3 class="title">Websites</h3>
-            <img src="images/web deveopment.jpg" alt="website image" />
-            <p class="description">
-              I'm FullStack Developer, I can develop websites<br />
-              (e-commerce, blogs, gradution projects) Websites
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">Full Stack Developer</div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="text-gradient">Mohamed Abd-Elmaksod</span>
+            </h1>
+            <p class="hero-description">
+              I build scalable web applications using .NET, Angular, React, and
+              Blazor. Passionate about clean code, modern architecture, and
+              creating exceptional digital experiences.
             </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-rocket"></i>
+                View My Work
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-paper-plane"></i>
+                Get In Touch
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+            </div>
           </div>
-          <div class="service">
-            <h3 class="title">Desktop Apps</h3>
-            <img src="images/desktop.jpg" alt="desktop image" />
-            <p class="description">
-              I'm .NET Developer so i work with desktop apps with (WinForms,
-              Wpf) Apps
-            </p>
-          </div>
-          <div class="service">
-            <h3 class="title">Teaching Programming</h3>
-            <img src="images/teaching.jpg" alt="programming" />
-            <p class="description">
-              I help student to learning programming <br />
-              sometimes i do a part of documentation for them in gradution
-              projects
-            </p>
-          </div>
+         <div class="hero-visual">
+    <div class="profile-container">
+        <img src="images/person-removebg.png" alt="Mohamed Abd-Elmaksod" class="profile-image">
+        <div class="tech-badges">
+            <div class="tech-badge" data-tech=".NET">
+                <i class="fab fa-microsoft"></i>
+            </div>
+            <div class="tech-badge" data-tech="Angular">
+                <i class="fab fa-angular"></i>
+            </div>
+            <div class="tech-badge" data-tech="React">
+                <i class="fab fa-react"></i>
+            </div>
+            <div class="tech-badge" data-tech="Blazor">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="tech-badge" data-tech="SQL">
+                <i class="fas fa-database"></i>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
       </div>
-    </div>
-    <!-- end services section -->
-    <!-- start contact section -->
-    <div class="contact" id="contact">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
       <div class="container">
-        <div class="contact-info">
-          <a
-            target="_blank"
-            href="https://www.facebook.com/profile.php?id=100007371522123"
-            class="facebook">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://twitter.com/3Bmaksod"
-            class="twitter">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/mohamed-abd-elmaksod-78b089243/"
-            class="linkedin">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://wa.me/0201018264656"
-            class="whatsapp">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://github.com/MohammedAbdElmaksod"
-            class="github">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a
-            target="_blank"
-            href="mailto:mi038126@gmail.com?subject=From Portfolio"
-            class="email">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>Passionate Full Stack Developer</h3>
+            <p>
+              I'm a dedicated Full Stack Developer with 3+ years of experience
+              specializing in the .NET ecosystem, Angular, React, and Blazor. I
+              hold a Bachelor's degree in Computer Science with Information
+              Systems specialization from Minya University.
+            </p>
+            <p>
+              Currently working as a Full Stack Developer at Suez Canal
+              Insurance (SCI), I've successfully delivered projects across
+              various domains including education, healthcare, e-commerce, and
+              booking systems.
+            </p>
+            <div class="about-info">
+              <div class="info-group">
+                <div class="info-item">
+                  <i class="fas fa-user"></i>
+                  <div>
+                    <strong>Name:</strong>
+                    <span>Mohamed Abd-Elmaksod Ali</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <strong>Email:</strong>
+                    <span>mi038126@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+              <div class="info-group">
+                <div class="info-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <strong>Phone:</strong>
+                    <span>+201018264656</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <strong>Location:</strong>
+                    <span>Cairo, Egypt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="./Mohamed Abd-Emaksod cv.pdf"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-download"></i>
+              Download CV
+            </a>
+          </div>
+          <div class="about-image">
+            <div class="floating-card">
+              <i class="fas fa-code"></i>
+              <h4>Clean Code</h4>
+              <p>Focus on maintainable and scalable solutions</p>
+            </div>
+            <div class="floating-card">
+              <i class="fas fa-rocket"></i>
+              <h4>Fast Delivery</h4>
+              <p>Efficient project execution</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- end contact section -->
-    <!-- start footer section -->
-    <div class="footer">
-      <footer>&copy; Mohammed AbdElmaksod 2024</footer>
-    </div>
-    <!-- end footer section -->
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+          <!-- Backend Skills -->
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tag">.NET Core / C#</div>
+              <div class="skill-tag">ASP.NET Core MVC</div>
+              <div class="skill-tag">ASP.NET Core Web API</div>
+              <div class="skill-tag">Entity Framework Core</div>
+              <div class="skill-tag">SQL Server</div>
+              <div class="skill-tag">RESTful APIs</div>
+              <div class="skill-tag">LINQ</div>
+              <div class="skill-tag">OOP & Design Patterns</div>
+            </div>
+          </div>
+
+          <!-- Frontend Skills -->
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-code"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tag">Angular</div>
+              <div class="skill-tag">React</div>
+              <div class="skill-tag">Blazor</div>
+              <div class="skill-tag">TypeScript</div>
+              <div class="skill-tag">JavaScript</div>
+              <div class="skill-tag">HTML5 & CSS3</div>
+              <div class="skill-tag">Bootstrap</div>
+              <div class="skill-tag">jQuery</div>
+            </div>
+          </div>
+
+          <!-- Tools & Others -->
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools & Platforms</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tag">Git & GitHub</div>
+              <div class="skill-tag">Azure</div>
+              <div class="skill-tag">WinForms</div>
+              <div class="skill-tag">Visual Studio</div>
+              <div class="skill-tag">VS Code</div>
+              <div class="skill-tag">Postman</div>
+              <div class="skill-tag">Docker</div>
+              <div class="skill-tag">Azure DevOps</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">My professional journey</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">07/2025 – Present</div>
+              <h3 class="timeline-title">Full Stack Developer</h3>
+              <h4 class="timeline-company">Suez Canal Insurance (SCI)</h4>
+              <p class="timeline-description">
+                Developing and maintaining enterprise-level insurance
+                applications using .NET Core and modern frontend frameworks.
+                Working on scalable solutions for the insurance industry.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">01/2022 – Present</div>
+              <h3 class="timeline-title">Freelance Full Stack Developer</h3>
+              <h4 class="timeline-company">Self-employed</h4>
+              <p class="timeline-description">
+                Delivered multiple projects including education websites,
+                booking systems, e-commerce platforms, and desktop applications
+                using .NET technologies and modern frameworks.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">08/2023 – 09/2023</div>
+              <h3 class="timeline-title">.NET Developer</h3>
+              <h4 class="timeline-company">
+                It Legend (Eng. Ali Shahin's Company)
+              </h4>
+              <p class="timeline-description">
+                Worked on team projects, learned clean architecture principles,
+                and contributed to building scalable enterprise applications
+                following best practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>.NET Core</span>
+                  <span>Angular</span>
+                  <span>SQL Server</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">LiBooking System</h3>
+              <p class="project-description">
+                Comprehensive booking platform for travel journeys, hotels, and
+                halls with advanced filtering, payment integration, and POS
+                dashboard.
+              </p>
+              <div class="project-actions">
+                <span class="project-category">Full Stack</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>ASP.NET Core</span>
+                  <span>Angular</span>
+                  <span>Entity Framework</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Smart Store E-Commerce</h3>
+              <p class="project-description">
+                Full-stack e-commerce platform with product management, user
+                authentication, shopping cart, and order processing system.
+              </p>
+              <div class="project-actions">
+                <span class="project-category">E-Commerce</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>WinForms</span>
+                  <span>.NET</span>
+                  <span>SQL Server</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Clinic Management System</h3>
+              <p class="project-description">
+                Desktop application for managing dental clinic operations
+                including patient records, appointments, billing, and inventory
+                management.
+              </p>
+              <div class="project-actions">
+                <span class="project-category">Desktop App</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>mi038126@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p>+201018264656</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <p>Cairo, Egypt</p>
+              </div>
+            </div>
+            <a
+              style="text-decoration: none"
+              href="https://www.linkedin.com/in/mohamed-abd-elmaksod-78b089243/"
+              target="_blank"
+            >
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>linkedin</h3>
+                  <p>3Bmaksod</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/MohammedAbdElmaksod"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100007371522123"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com/3Bmaksod"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://wa.me/0201018264656"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            &copy; <span class="current-year">2025</span> Mohamed Abd-Elmaksod.
+            All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>
