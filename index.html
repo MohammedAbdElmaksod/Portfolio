@@ -1,480 +1,422 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohamed Abd-Elmaksod | Full Stack .NET Developer</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo"><span>M</span>A</div>
-        <ul class="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090d18" />
+  <meta name="description" content="Portfolio of Mohamed Abdelmaksod Ali, Full Stack .NET & Angular Developer building scalable enterprise and commercial software." />
+  <meta name="keywords" content="Mohamed Abdelmaksod, Full Stack .NET Developer, Angular Developer, ASP.NET Core, C#, SQL Server, Docker, Microservices" />
+  <meta property="og:title" content="Mohamed Abdelmaksod | Full Stack .NET & Angular Developer" />
+  <meta property="og:description" content="Enterprise-minded full stack engineering with .NET, Angular, SQL, clean architecture, and modern delivery practices." />
+  <meta property="og:type" content="website" />
+  <title>Mohamed Abdelmaksod | Full Stack .NET & Angular Developer</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__mark">MO</div>
+    <div class="preloader__track"><span></span></div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand magnetic" href="#home" aria-label="Mohamed Abdelmaksod home">
+        <span class="brand__mark">MO</span>
+        <span class="brand__text">Mohamed Abdelmaksod</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a class="nav-link active" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
+
+      <a class="nav-cta magnetic" href="Mohamed-Abdelmaksod-CV.pdf" target="_blank" rel="noreferrer">
+        CV <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="hero-badge">Full Stack Developer</div>
-            <h1 class="hero-title">
-              Hi, I'm <span class="text-gradient">Mohamed Abd-Elmaksod</span>
-            </h1>
-            <p class="hero-description">
-              I build scalable web applications using .NET, Angular, React, and
-              Blazor. Passionate about clean code, modern architecture, and
-              creating exceptional digital experiences.
-            </p>
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">
-                <i class="fas fa-rocket"></i>
-                View My Work
-              </a>
-              <a href="#contact" class="btn btn-secondary">
-                <i class="fas fa-paper-plane"></i>
-                Get In Touch
-              </a>
-            </div>
-            <div class="hero-stats">
-              <div class="stat">
-                <div class="stat-number">3+</div>
-                <div class="stat-label">Years Experience</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">20+</div>
-                <div class="stat-label">Projects Completed</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">Technologies</div>
-              </div>
-            </div>
-          </div>
-         <div class="hero-visual">
-    <div class="profile-container">
-        <img src="images/person-removebg.png" alt="Mohamed Abd-Elmaksod" class="profile-image">
-        <div class="tech-badges">
-            <div class="tech-badge" data-tech=".NET">
-                <i class="fab fa-microsoft"></i>
-            </div>
-            <div class="tech-badge" data-tech="Angular">
-                <i class="fab fa-angular"></i>
-            </div>
-            <div class="tech-badge" data-tech="React">
-                <i class="fab fa-react"></i>
-            </div>
-            <div class="tech-badge" data-tech="Blazor">
-                <i class="fas fa-bolt"></i>
-            </div>
-            <div class="tech-badge" data-tech="SQL">
-                <i class="fas fa-database"></i>
-            </div>
-        </div>
-    </div>
-</div>
-        </div>
-      </div>
-    </section>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span class="status-dot"></span> Full Stack .NET + Angular Developer</div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">Get to know me better</p>
-        </div>
-        <div class="about-grid">
-          <div class="about-content">
-            <h3>Passionate Full Stack Developer</h3>
-            <p>
-              I'm a dedicated Full Stack Developer with 3+ years of experience
-              specializing in the .NET ecosystem, Angular, React, and Blazor. I
-              hold a Bachelor's degree in Computer Science with Information
-              Systems specialization from Minya University.
-            </p>
-            <p>
-              Currently working as a Full Stack Developer at Suez Canal
-              Insurance (SCI), I've successfully delivered projects across
-              various domains including education, healthcare, e-commerce, and
-              booking systems.
-            </p>
-            <div class="about-info">
-              <div class="info-group">
-                <div class="info-item">
-                  <i class="fas fa-user"></i>
-                  <div>
-                    <strong>Name:</strong>
-                    <span>Mohamed Abd-Elmaksod Ali</span>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <i class="fas fa-envelope"></i>
-                  <div>
-                    <strong>Email:</strong>
-                    <span>mi038126@gmail.com</span>
-                  </div>
-                </div>
-              </div>
-              <div class="info-group">
-                <div class="info-item">
-                  <i class="fas fa-phone"></i>
-                  <div>
-                    <strong>Phone:</strong>
-                    <span>+201018264656</span>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div>
-                    <strong>Location:</strong>
-                    <span>Cairo, Egypt</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a
-              href="./Mohamed Abd-Emaksod cv.pdf"
-              class="btn btn-primary"
-            >
-              <i class="fas fa-download"></i>
-              Download CV
-            </a>
-          </div>
-          <div class="about-image">
-            <div class="floating-card">
-              <i class="fas fa-code"></i>
-              <h4>Clean Code</h4>
-              <p>Focus on maintainable and scalable solutions</p>
-            </div>
-            <div class="floating-card">
-              <i class="fas fa-rocket"></i>
-              <h4>Fast Delivery</h4>
-              <p>Efficient project execution</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <h1 class="hero-title" data-split>
+            I build software that feels <span class="gradient-text">fast, clear & built to last.</span>
+          </h1>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Technical Skills</h2>
-          <p class="section-subtitle">Technologies I work with</p>
-        </div>
-        <div class="skills-grid">
-          <!-- Backend Skills -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-server"></i>
-              <h3>Backend Development</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-tag">.NET Core / C#</div>
-              <div class="skill-tag">ASP.NET Core MVC</div>
-              <div class="skill-tag">ASP.NET Core Web API</div>
-              <div class="skill-tag">Entity Framework Core</div>
-              <div class="skill-tag">SQL Server</div>
-              <div class="skill-tag">RESTful APIs</div>
-              <div class="skill-tag">LINQ</div>
-              <div class="skill-tag">OOP & Design Patterns</div>
-            </div>
-          </div>
-
-          <!-- Frontend Skills -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-code"></i>
-              <h3>Frontend Development</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-tag">Angular</div>
-              <div class="skill-tag">React</div>
-              <div class="skill-tag">Blazor</div>
-              <div class="skill-tag">TypeScript</div>
-              <div class="skill-tag">JavaScript</div>
-              <div class="skill-tag">HTML5 & CSS3</div>
-              <div class="skill-tag">Bootstrap</div>
-              <div class="skill-tag">jQuery</div>
-            </div>
-          </div>
-
-          <!-- Tools & Others -->
-          <div class="skill-category">
-            <div class="category-header">
-              <i class="fas fa-tools"></i>
-              <h3>Tools & Platforms</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-tag">Git & GitHub</div>
-              <div class="skill-tag">Azure</div>
-              <div class="skill-tag">WinForms</div>
-              <div class="skill-tag">Visual Studio</div>
-              <div class="skill-tag">VS Code</div>
-              <div class="skill-tag">Postman</div>
-              <div class="skill-tag">Docker</div>
-              <div class="skill-tag">Azure DevOps</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Work Experience</h2>
-          <p class="section-subtitle">My professional journey</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">07/2025 – Present</div>
-              <h3 class="timeline-title">Full Stack Developer</h3>
-              <h4 class="timeline-company">Suez Canal Insurance (SCI)</h4>
-              <p class="timeline-description">
-                Developing and maintaining enterprise-level insurance
-                applications using .NET Core and modern frontend frameworks.
-                Working on scalable solutions for the insurance industry.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">01/2022 – Present</div>
-              <h3 class="timeline-title">Freelance Full Stack Developer</h3>
-              <h4 class="timeline-company">Self-employed</h4>
-              <p class="timeline-description">
-                Delivered multiple projects including education websites,
-                booking systems, e-commerce platforms, and desktop applications
-                using .NET technologies and modern frameworks.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">08/2023 – 09/2023</div>
-              <h3 class="timeline-title">.NET Developer</h3>
-              <h4 class="timeline-company">
-                It Legend (Eng. Ali Shahin's Company)
-              </h4>
-              <p class="timeline-description">
-                Worked on team projects, learned clean architecture principles,
-                and contributed to building scalable enterprise applications
-                following best practices.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-subtitle">Some of my recent work</p>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-overlay">
-                <div class="project-tech">
-                  <span>.NET Core</span>
-                  <span>Angular</span>
-                  <span>SQL Server</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">LiBooking System</h3>
-              <p class="project-description">
-                Comprehensive booking platform for travel journeys, hotels, and
-                halls with advanced filtering, payment integration, and POS
-                dashboard.
-              </p>
-              <div class="project-actions">
-                <span class="project-category">Full Stack</span>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-overlay">
-                <div class="project-tech">
-                  <span>ASP.NET Core</span>
-                  <span>Angular</span>
-                  <span>Entity Framework</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Smart Store E-Commerce</h3>
-              <p class="project-description">
-                Full-stack e-commerce platform with product management, user
-                authentication, shopping cart, and order processing system.
-              </p>
-              <div class="project-actions">
-                <span class="project-category">E-Commerce</span>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-overlay">
-                <div class="project-tech">
-                  <span>WinForms</span>
-                  <span>.NET</span>
-                  <span>SQL Server</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Clinic Management System</h3>
-              <p class="project-description">
-                Desktop application for managing dental clinic operations
-                including patient records, appointments, billing, and inventory
-                management.
-              </p>
-              <div class="project-actions">
-                <span class="project-category">Desktop App</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Get In Touch</h2>
-          <p class="section-subtitle">Let's work together</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-details">
-                <h3>Email</h3>
-                <p>mi038126@gmail.com</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="contact-details">
-                <h3>Phone</h3>
-                <p>+201018264656</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-details">
-                <h3>Location</h3>
-                <p>Cairo, Egypt</p>
-              </div>
-            </div>
-            <a
-              style="text-decoration: none"
-              href="https://www.linkedin.com/in/mohamed-abd-elmaksod-78b089243/"
-              target="_blank"
-            >
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fab fa-linkedin"></i>
-                </div>
-                <div class="contact-details">
-                  <h3>linkedin</h3>
-                  <p>3Bmaksod</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="social-links">
-            <a
-              href="https://github.com/MohammedAbdElmaksod"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100007371522123"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a
-              href="https://twitter.com/3Bmaksod"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a
-              href="https://wa.me/0201018264656"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fab fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <p>
-            &copy; <span class="current-year">2025</span> Mohamed Abd-Elmaksod.
-            All rights reserved.
+          <p class="hero-lead">
+            I’m <strong>Mohamed Abdelmaksod Ali</strong>, a full stack developer with 3+ years of hands-on experience building enterprise and commercial applications with C#, ASP.NET Core, Angular, SQL Server, REST APIs, and clean architecture practices.
           </p>
+
+          <div class="hero-actions">
+            <a class="button button--primary magnetic" href="#projects">
+              Explore selected work <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a class="button button--ghost magnetic" href="Mohamed-Abdelmaksod-CV.pdf" download>
+              Download CV <i class="fa-solid fa-download"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social profiles">
+            <a href="https://github.com/MohammedAbdElmaksod?tab=repositories" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/mohamed-abd-elmaksod-78b089243/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+            <a href="mailto:mi038126@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Portrait of Mohamed Abdelmaksod">
+          <div class="portrait-stage">
+            <div class="orbit orbit--outer"></div>
+            <div class="orbit orbit--inner"></div>
+            <div class="portrait-glow"></div>
+            <div class="portrait-card tilt-card">
+              <div class="portrait-grid"></div>
+              <img src="images/mohamed-profile.webp" alt="Mohamed Abdelmaksod Ali" fetchpriority="high" />
+              <div class="portrait-caption">
+                <span>Based in Cairo, Egypt</span>
+                <strong>Open to building meaningful systems.</strong>
+              </div>
+            </div>
+
+            <div class="floating-chip floating-chip--one"><i class="fa-solid fa-code"></i> ASP.NET Core</div>
+            <div class="floating-chip floating-chip--two"><i class="fa-brands fa-angular"></i> Angular</div>
+            <div class="floating-chip floating-chip--three"><i class="fa-solid fa-cubes"></i> Clean Architecture</div>
+            <div class="floating-chip floating-chip--four"><i class="fa-brands fa-docker"></i> Docker</div>
+          </div>
         </div>
       </div>
-    </footer>
 
-    <script src="js/main.js"></script>
-  </body>
+      <div class="hero-metrics shell">
+        <div class="metric reveal">
+          <strong style="display: flex; align-items: center; gap:3px;"><span style="font-size: 20px; margin-top: 7px;">+</span><span data-count="3">3</span></strong>
+          <span>Years building software</span>
+        </div>
+        <div class="metric reveal">
+          <strong><span data-count="21">21</span></strong>
+          <span>Public GitHub repositories</span>
+        </div>
+        <div class="metric reveal">
+          <strong style="display: flex; align-items: center; gap: 3px;"><span style="font-size: 20px; margin-top: 7px;">+</span><span data-count="5000">5,000</span></strong>
+          <span>Users supported by internship APIs</span>
+        </div>
+        <div class="metric reveal">
+          <strong style="display: flex; align-items: center; gap: 3px;"><span style="font-size: 15px; margin-top: 7px;">%</span><span data-count="40">40</span></strong>
+          <span>Less manual exam allocation time</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack-marquee" aria-label="Technology stack">
+      <div class="marquee-track">
+        <span>C#</span><span>ASP.NET Core</span><span>Angular</span><span>SQL Server</span><span>PostgreSQL</span><span>Entity Framework Core</span><span>REST APIs</span><span>Docker</span><span>CQRS</span><span>Microservices</span><span>JWT</span><span>Clean Architecture</span>
+        <span>C#</span><span>ASP.NET Core</span><span>Angular</span><span>SQL Server</span><span>PostgreSQL</span><span>Entity Framework Core</span><span>REST APIs</span><span>Docker</span><span>CQRS</span><span>Microservices</span><span>JWT</span><span>Clean Architecture</span>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">01 / About</p>
+          <h2>Enterprise thinking.<br /><span class="muted">Product-minded execution.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="about-intro">
+              I work across the full application lifecycle—from API design and data modeling to Angular interfaces, authentication, performance tuning, and production-minded architecture.
+            </p>
+            <p>
+              My experience spans insurance systems, booking and e-commerce products, desktop applications, internal tools, and public learning projects. I care about readable code, deliberate boundaries, predictable data flow, and software that remains maintainable after the first release.
+            </p>
+
+            <div class="about-points">
+              <div><span>01</span><p><strong>Backend depth</strong> — APIs, business rules, EF Core, SQL, security, integrations.</p></div>
+              <div><span>02</span><p><strong>Frontend delivery</strong> — Angular, JavaScript, responsive UI, data-driven workflows.</p></div>
+              <div><span>03</span><p><strong>Architecture focus</strong> — Clean Architecture, CQRS, SOLID, Unit of Work, microservices.</p></div>
+            </div>
+          </div>
+
+          <div class="terminal reveal tilt-card" aria-label="Developer profile terminal">
+            <div class="terminal-top">
+              <span></span><span></span><span></span>
+              <small>mohamed@portfolio:~</small>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="terminal-output">Mohamed Abdelmaksod Ali</p>
+              <p><span class="prompt">$</span> role --current</p>
+              <p class="terminal-output">Full Stack Developer @ Suez Canal Insurance</p>
+              <p><span class="prompt">$</span> stack --focus</p>
+              <p class="terminal-output">.NET · Angular · SQL · Docker · REST</p>
+              <p><span class="prompt">$</span> architecture --principles</p>
+              <p class="terminal-output">Clean Architecture · CQRS · SOLID</p>
+              <p><span class="prompt">$</span> status</p>
+              <p class="terminal-output terminal-ready">ready_to_build<span class="terminal-caret">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="shell">
+        <div class="section-heading section-heading--row reveal">
+          <div>
+            <p class="section-kicker">02 / Capability map</p>
+            <h2>Technical range,<br /><span class="muted">organized by impact.</span></h2>
+          </div>
+          <p class="section-note">A stack built around .NET and Angular, with the database, architecture, security, and delivery skills required to ship complete systems.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-panel reveal tilt-card">
+            <div class="skill-panel__top"><span>Backend</span><i class="fa-solid fa-server"></i></div>
+            <h3>APIs & business logic</h3>
+            <p>Designing maintainable backend services and rule-heavy business workflows.</p>
+            <div class="chip-list">
+              <span>C#</span><span>ASP.NET Core</span><span>Razor Pages</span><span>REST APIs</span><span>Entity Framework Core</span><span>LINQ</span><span>Dependency Injection</span>
+            </div>
+          </article>
+
+          <article class="skill-panel reveal tilt-card">
+            <div class="skill-panel__top"><span>Frontend</span><i class="fa-solid fa-window-maximize"></i></div>
+            <h3>Interfaces & workflows</h3>
+            <p>Building responsive business interfaces with clear state and reliable user flows.</p>
+            <div class="chip-list">
+              <span>Angular</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>jQuery</span><span>Blazor</span>
+            </div>
+          </article>
+
+          <article class="skill-panel reveal tilt-card">
+            <div class="skill-panel__top"><span>Data & security</span><i class="fa-solid fa-database"></i></div>
+            <h3>Data that stays trustworthy</h3>
+            <p>Query optimization, persistence, access control, and secure authentication flows.</p>
+            <div class="chip-list">
+              <span>SQL Server</span><span>PostgreSQL</span><span>MongoDB</span><span>JWT</span><span>Authentication</span><span>Authorization</span><span>Database Design</span>
+            </div>
+          </article>
+
+          <article class="skill-panel reveal tilt-card">
+            <div class="skill-panel__top"><span>Architecture & delivery</span><i class="fa-solid fa-diagram-project"></i></div>
+            <h3>Systems built for change</h3>
+            <p>Separating concerns, automating environments, and keeping the codebase understandable.</p>
+            <div class="chip-list">
+              <span>Clean Architecture</span><span>CQRS</span><span>SOLID</span><span>Unit of Work</span><span>Microservices</span><span>Docker</span><span>Git</span><span>xUnit</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--experience" id="experience">
+      <div class="shell experience-layout">
+        <div class="experience-sticky reveal">
+          <p class="section-kicker">03 / Experience</p>
+          <h2>Shipping software<br /><span class="muted">in real environments.</span></h2>
+          <p>Enterprise insurance systems, commercial freelance work, internal tooling, and team-based backend development.</p>
+          <a class="text-link magnetic" href="Mohamed-Abdelmaksod-CV.pdf" target="_blank" rel="noreferrer">View full CV <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="timeline" aria-label="Professional experience timeline">
+          <div class="timeline-line"><span></span></div>
+
+          <article class="experience-card reveal">
+            <div class="experience-meta"><span>07/2025 — Present</span><span>Dokki, Egypt</span></div>
+            <h3>Full Stack Developer</h3>
+            <h4>Suez Canal Insurance (SCI)</h4>
+            <p>Developing and maintaining enterprise business applications using ASP.NET Core, Angular, SQL Server, Razor Pages, and REST APIs.</p>
+            <ul>
+              <li>Design backend APIs, database queries, and frontend modules for internal insurance operations.</li>
+              <li>Improve performance, security, and maintainability through optimized SQL, clean code, and layered architecture.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card reveal">
+            <div class="experience-meta"><span>01/2022 — Present</span><span>Remote</span></div>
+            <h3>Freelance Full Stack Developer</h3>
+            <h4>Commercial & independent projects</h4>
+            <p>Delivered booking, e-commerce, education, scheduling, and desktop systems across the .NET ecosystem.</p>
+            <ul>
+              <li>Built LiBooking, a live travel, hotel, and event hall booking platform with filtering, payments, and operations dashboard.</li>
+              <li>Built Smart Store APIs for products, categories, orders, users, and secure database-backed workflows.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card reveal">
+            <div class="experience-meta"><span>06/2024 — 06/2025</span><span>Kobry Elqoba, Egypt</span></div>
+            <h3>IT & Full Stack Developer</h3>
+            <h4>Egyptian Army</h4>
+            <p>Delivered IT support, maintained systems, and developed internal software solutions to improve workflow efficiency.</p>
+          </article>
+
+          <article class="experience-card reveal">
+            <div class="experience-meta"><span>08/2023 — 09/2023</span><span>Mohandssien, Egypt</span></div>
+            <h3>.NET Backend Intern</h3>
+            <h4>IT Legend</h4>
+            <p>Co-developed a recruitment platform and contributed core APIs supporting 5,000+ registrations while working with Git, Clean Architecture, and layered design.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="shell">
+        <div class="section-heading section-heading--row reveal">
+          <div>
+            <p class="section-kicker">04 / Selected work</p>
+            <h2>Projects that show<br /><span class="muted">how I think.</span></h2>
+          </div>
+          <a class="text-link magnetic" href="https://github.com/MohammedAbdElmaksod?tab=repositories" target="_blank" rel="noreferrer">Explore all repositories <i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <article class="project-featured reveal tilt-card">
+          <div class="project-featured__visual">
+            <div class="architecture-board">
+              <span class="arch-node arch-node--gateway">Ocelot<br />API Gateway</span>
+              <span class="arch-node arch-node--service-a">Service A</span>
+              <span class="arch-node arch-node--service-b">Service B</span>
+              <span class="arch-node arch-node--infra">Infrastructure</span>
+              <span class="arch-node arch-node--docker">Docker</span>
+              <svg viewBox="0 0 800 440" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M165 220 C260 220 270 100 380 100" />
+                <path d="M165 220 C260 220 270 335 380 335" />
+                <path d="M500 100 C585 100 585 215 660 215" />
+                <path d="M500 335 C585 335 585 215 660 215" />
+              </svg>
+            </div>
+          </div>
+          <div class="project-featured__copy">
+            <div class="project-label"><span>Featured / 2026</span><span>Architecture project</span></div>
+            <h3>Microservices E-Commerce</h3>
+            <p>A microservices e-commerce solution built around ASP.NET Core and Angular, with an Ocelot API Gateway, separated services/infrastructure, and Docker Compose orchestration.</p>
+            <div class="chip-list chip-list--accent"><span>ASP.NET Core 10</span><span>Angular 20</span><span>Ocelot</span><span>Docker Compose</span><span>Microservices</span></div>
+            <a class="button button--ghost magnetic" href="https://github.com/MohammedAbdElmaksod/MicroServices_Ecommerce" target="_blank" rel="noreferrer">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <div class="projects-grid">
+          <article class="project-card reveal tilt-card">
+            <div class="project-card__index">01</div>
+            <div class="project-card__icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <h3>LiBooking</h3>
+            <p>Live platform for travel journeys, hotels, and event halls with filtering, payment features, and a POS-style operations dashboard.</p>
+            <div class="chip-list"><span>.NET</span><span>Booking</span><span>Payments</span><span>Dashboard</span></div>
+            <span class="project-status">Commercial / Live</span>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-card__index">02</div>
+            <div class="project-card__icon"><i class="fa-solid fa-file-shield"></i></div>
+            <h3>Extension Converter & Duplicate Cleaner</h3>
+            <p>.NET console utility for bulk extension renaming and content-based duplicate removal using SHA-256 hashing.</p>
+            <div class="chip-list"><span>C#</span><span>.NET</span><span>SHA-256</span><span>CLI</span></div>
+            <a class="project-link" href="https://github.com/MohammedAbdElmaksod/Extention-Coverter-And-Remove-Duplicates" target="_blank" rel="noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-card__index">03</div>
+            <div class="project-card__icon"><i class="fa-solid fa-calendar-days"></i></div>
+            <h3>Exam Scheduling System</h3>
+            <p>Scheduling logic for Minya University that reduced manual hall-allocation time by 40% and improved student-group slot assignment.</p>
+            <div class="chip-list"><span>Scheduling</span><span>Algorithms</span><span>.NET</span><span>Optimization</span></div>
+            <span class="project-status">University system</span>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-card__index">04</div>
+            <div class="project-card__icon"><i class="fa-solid fa-tooth"></i></div>
+            <h3>Dentist Clinic Manager</h3>
+            <p>Windows Forms application for appointments, patient records, and day-to-day clinic workflow management.</p>
+            <div class="chip-list"><span>C#</span><span>WinForms</span><span>Desktop</span></div>
+            <a class="project-link" href="https://github.com/MohammedAbdElmaksod/Dentist-Clinic-Desktop-App" target="_blank" rel="noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-card__index">05</div>
+            <div class="project-card__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Education Platform</h3>
+            <p>High-school teacher platform with ASP.NET MVC backend functionality integrated into a pre-designed user interface.</p>
+            <div class="chip-list"><span>ASP.NET MVC</span><span>Education</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://github.com/MohammedAbdElmaksod/ASPNET_EducationProject" target="_blank" rel="noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal tilt-card">
+            <div class="project-card__index">06</div>
+            <div class="project-card__icon"><i class="fa-solid fa-gamepad"></i></div>
+            <h3>GameZone</h3>
+            <p>A focused games management project centered around CRUD operations and practical .NET application development.</p>
+            <div class="chip-list"><span>C#</span><span>CRUD</span><span>.NET</span></div>
+            <a class="project-link" href="https://github.com/MohammedAbdElmaksod/GameZone" target="_blank" rel="noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--education">
+      <div class="shell education-grid">
+        <div class="section-heading reveal">
+          <p class="section-kicker">05 / Foundation</p>
+          <h2>Strong fundamentals,<br /><span class="muted">continuous practice.</span></h2>
+        </div>
+
+        <div class="education-card reveal tilt-card">
+          <span class="education-year">2019 — 2023</span>
+          <h3>Bachelor’s Degree in Computer Science</h3>
+          <p>Specialization: Information Systems<br />Computers and Information College · Minya, Egypt</p>
+          <div class="education-row"><span>Languages</span><strong>Arabic · English · Spanish</strong></div>
+          <div class="education-row"><span>Core strengths</span><strong>OOP · Data Structures · Algorithms · SOLID</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="shell contact-wrap reveal">
+        <p class="section-kicker">06 / Contact</p>
+        <h2>Have a serious product,<br />platform, or engineering challenge?</h2>
+        <a class="contact-email magnetic" href="mailto:mi038126@gmail.com">Send me an Email <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+        <div class="contact-bottom">
+          <p>Cairo, Egypt · +20 101 826 4656</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/mohamed-abd-elmaksod-78b089243/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/MohammedAbdElmaksod?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="Mohamed-Abdelmaksod-CV.pdf" target="_blank" rel="noreferrer">CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <p>© <span id="current-year"></span> Mohamed Abdelmaksod Ali.</p>
+      <a href="#home">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
